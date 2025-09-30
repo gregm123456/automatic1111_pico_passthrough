@@ -1,0 +1,21 @@
+.venv/
+env/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+*.sqlite3
+*.log
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Docker
+docker-compose.override.yml
