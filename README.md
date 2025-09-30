@@ -8,34 +8,7 @@ License: MIT
 
 Minimal FastAPI service that proxies Automatic1111 `/sdapi/v1/txt2img` requests and converts PNG output to Pico-compatible RGB565 big-endian binary.
 
-How to publish this repo to GitHub (create a public repository and push):
 
-1) Create the remote repository via GitHub CLI (recommended):
-
-```bash
-gh repo create gregm123456/automatic1111_pico_passthrough --public --source=. --remote=origin --push
-```
-
-2) Or create via curl + Personal Access Token (replace GITHUB_TOKEN):
-
-```bash
-curl -H "Authorization: token GITHUB_TOKEN" \
-	-d '{"name":"automatic1111_pico_passthrough","private":false}' \
-	https://api.github.com/user/repos
-git remote add origin https://github.com/gregm123456/automatic1111_pico_passthrough.git
-git branch -M main
-git push -u origin main
-```
-
-3) If you already have a remote, push normally:
-
-```bash
-git add .
-git commit -m "Initial repo upload"
-git branch -M main
-git remote add origin https://github.com/gregm123456/automatic1111_pico_passthrough.git
-git push -u origin main
-```
 
 Notes:
 - CI runs pytest on Python 3.11 via GitHub Actions (`.github/workflows/ci.yml`).
