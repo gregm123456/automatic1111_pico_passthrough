@@ -10,6 +10,7 @@ build/
 .mypy_cache/
 *.sqlite3
 *.log
+.env
 
 # macOS
 .DS_Store
